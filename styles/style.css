@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: #242333;
+  color: #fff;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  
+  
+}
+img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+a{
+    color: #ffffff !important;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.navbar {
+  background-color: #ad0c0c;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+  
+
+  text-align: center;
+  
+}
+.navbar h1 {
+  margin: 0; /* Eliminar el margen predeterminado del h1 */
+}
+
+.peliculas_disp {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.peliculas_disp select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+
+.asiento {
+  background-color: #444451;
+  height: 26px;
+  width: 28px;
+  margin: 3px;
+  font-size: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.asiento.selected {
+  background-color: green;
+}
+
+.asiento.sold {
+  background-color: #fff;
+}
+
+.asiento:nth-of-type(3) {
+  margin-right: 15px;
+}
+.fila{
+    margin: 1px;
+    width: 13px;
+    padding: 5px 10px;
+}
+.espacio{
+    height: 26px;
+  width: 32px;
+  margin: 3px;
+}
+
+.asiento:nth-last-of-type(3) {
+  margin-left: 15px;
+}
+
+.asiento:not(.sold):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .asiento:not(.sold):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap; /* Evita que las filas salten a la siguiente línea */
+    /* Añade una barra de desplazamiento horizontal si es necesario */
+  justify-content: center;
+  width: 100%;
+}
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  max-width: 400px;
+  margin: 15px 0;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  margin-left: 16px;
+  margin-right: 16px;
+  transform: rotateX(-48deg);
+}
+
+p.text{
+    margin: 5px 0;
+}
+
+p.text span{
+    color: rgb(158, 248, 158);
+}
+.boton{
+    border-radius: 5px;
+    margin: 10px;
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+footer{
+    background-color: #ad0c0c;
+    color: #ffffff;
+    width: 100%;
+}
+.imagen{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+button{
+    background-color: #ad0c0c;
+    color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .showcase li {
+    width: 100%;
+  }
+}

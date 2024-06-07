@@ -1,0 +1,168 @@
+/* Asegurar que el fondo de la página sea negro */
+html, body {
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+    color: white; /* Para asegurar que el texto sea legible sobre el fondo negro */
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin-top: 100px;
+    margin-left: 20;
+}
+
+/* Centrar el contenido del carrusel */
+.carousel-inner {
+    
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Ajusta esta altura según tus necesidades */
+}
+
+/* Reducir el tamaño de las imágenes del carrusel */
+.carousel-inner img {
+    max-height: 600px; 
+    max-width: 1100px; /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Esto mantendrá las proporciones de la imagen */
+    margin: auto;
+}
+
+/* Estilo adicional para el navbar (opcional) para que se vea bien sobre el fondo negro */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    background-color: #b50606;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    box-sizing: border-box;
+    box-shadow: 0px 17px 59px 11px rgba(116, 3, 214, 0.62);
+    display: flex;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0 15px;
+    font-size: 35px;
+    font-family: Arial;
+    color: white;
+}
+
+ul {
+
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+li {
+    
+    margin-left: 5px;
+    width: 170px;
+    height: 90px;
+    padding-top: 25px;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: #4f00875b;
+    box-shadow: 0px 0px 400px 18px #f43f3f;
+    text-decoration: underline white;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.movie-card img {
+    height: 400px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.grid-container .card {
+    margin-bottom: 20px;
+}
+
+.movie-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card:hover img {
+    opacity: 0.5;
+}
+
+.movie-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.movie-card:hover .movie-info {
+    opacity: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.grid-container .card {
+    margin-bottom: 20px;
+}
+
+.movie-card {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #a40606;
+    color: #ffffff;
+}
+
+iframe {
+    margin: 0 auto;
+}

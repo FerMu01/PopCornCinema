@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Compra de butacas</title>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="cinemain.html">
+        <img src="images/logo.jpeg.jpg" alt="Cine Logo" class="navbar-logo" />
+    </a>
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#carouselExampleControls">Inicio <span class="sr-only">(actual)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cinemain.html?=#cartelera">Cartelera</a>
+            </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cinemain.html?#Proximamente">Proximamente</a>
+    </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="peliculas_disp">
+      <label> Elige una película:</label>
+      <select id="movie">
+        <option value="40">Juega o muere (Bs.40)</option>
+        <option value="35">Five Nights at Freddy's (Bs.35)</option>
+        <option value="35">Los juegos del hambre (Bs.35)</option>
+        <option value="40">Trolls 3 (Bs.40)</option>
+      </select>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="asiento"></div>
+        <small>Disponible</small>
+      </li>
+      <li>
+        <div class="asiento selected"></div>
+        <small>Seleccionado</small>
+      </li>
+      <li>
+        <div class="asiento sold"></div>
+        <small>Vendido</small>
+      </li>
+    </ul>
+    <div class="container">
+        
+      <div class="screen"></div>
+
+      <div class="row">
+        <p class="fila">A</p>
+        <div class="espacio"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="espacio"></div>
+      </div>
+
+      <div class="row">
+        <p class="fila">B</p>
+        <div class="espacio"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="espacio"></div>
+      </div>
+      <div class="row">
+        <p class="fila">C</p>
+        <div class="espacio"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento sold"></div>
+        <div class="espacio"></div>
+      </div>
+      <div class="row">
+        <p class="fila">D</p>
+        <div class="espacio"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="espacio"></div>
+      </div>
+      <div class="row">
+        <p class="fila">E</p>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+      </div>
+      <div class="row">
+        <p class="fila">F</p>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento sold"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+        <div class="asiento"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      Seleccionaste <span id="count">0</span> asientos por el precio de Bs.<span
+        id="total"
+        >0</span
+      >
+    </p>
+    <button id="compra" class="boton"><a href="cinemain.html"></a>Comprar</button>
+
+    <dialog id="modal">
+        <div class="modales">
+          <h1>Pago QR</h1>
+          <img class="imagen" src="images/qr.png" alt="qrdepago">
+          <p style="text-align: center;">
+            Realice el pago para confirmar su compra.
+            </p>
+          <button class="btn btn-primary" id="close">Cancelar</button>
+          <button class="btn btn-primary" id="exitoso"><a href="cinemain.html">Pago exitoso</a></button>
+        </div>
+    </dialog>
+    <footer id="footer">
+        <p><strong>CORREO ELECTRONICO:</strong><a href="mailto:name@example.com">popcorncinema@gmail.com</a></p>
+        <p><strong>TELÉFONO:</strong> (+591) 67558226</p>
+        <p><strong>Desarrollado por MESI &copy; </strong></p>
+
+    </footer>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
