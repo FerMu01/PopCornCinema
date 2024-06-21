@@ -8,12 +8,11 @@ html, body {
 }
 h1 {
     margin-top: 100px;
-    margin-left: 20;
+    margin-left: 20px;
 }
 
 /* Centrar el contenido del carrusel */
 .carousel-inner {
-    
     justify-content: center;
     align-items: center;
     height: 500px; /* Ajusta esta altura según tus necesidades */
@@ -28,11 +27,10 @@ h1 {
 }
 
 /* Estilo adicional para el navbar (opcional) para que se vea bien sobre el fondo negro */
-
 .navbar {
     position: fixed;
     top: 0;
-    background-color: #b50606;
+    background: linear-gradient(to right, #000000, #ad0c0c);
     width: 100%;
     height: 70px;
     z-index: 1000;
@@ -50,14 +48,13 @@ h1 {
 }
 
 ul {
-
     align-items: center;
     margin-left: auto;
     margin-right: 10px;
+    color: white;
 }
 
 li {
-    
     margin-left: 5px;
     width: 170px;
     height: 90px;
@@ -73,18 +70,18 @@ a {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 a:hover {
     background-color: #4f00875b;
     box-shadow: 0px 0px 400px 18px #f43f3f;
-    text-decoration: underline white;
+    text-decoration: underline rgba(86, 0, 0, 0.486);
 }
 
 .navbar img {
-    width: 50px;
-    height: 50px;
+    width: 160px;
+    height: 90px;
     margin-right: 15px;
 }
 
@@ -130,39 +127,98 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: rgba(0, 0, 0, 0.89);
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    font-size: 18px;
 }
 
 .movie-card:hover .movie-info {
     opacity: 1;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
+.movie-card iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.grid-container .card {
-    margin-bottom: 20px;
-}
-
-.movie-card {
-    margin-bottom: 20px;
+.movie-card:hover iframe {
+    opacity: 1;
+    pointer-events: all;
 }
 
 h1, h2 {
     color: #ffffff;
 }
 
-footer {
-    background-color: #a40606;
+/* Footer */
+.footer {
+    background: linear-gradient(to right, #000000, #ad0c0c);
     color: #ffffff;
+    padding: 20px 0;
+    text-align: center; /* Asegura que el contenido esté centrado */
+    width: 100%;
+}
+
+.footer p {
+    margin: 0; /* Ajusta los márgenes si es necesario */
+}
+
+.footer a {
+    color: #ffffff; /* Ajusta el color de los enlaces si es necesario */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Efecto hover para enlaces en el footer */
 }
 
 iframe {
     margin: 0 auto;
+}
+
+.btn-outline-light {
+    border-color: rgb(186, 148, 148);
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-outline-warning {
+    border-color: yellow;
+    color: yellow;
+}
+
+.btn-outline-warning:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Remover efecto hover de los botones del slider */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: none;
+    opacity: 1;
+    transition: none; /* Remover transición para el hover */
+}
+
+/* Transición más fluida del slider */
+.carousel-item {
+    transition: transform 1.5s ease, opacity 1.5s ease;
 }

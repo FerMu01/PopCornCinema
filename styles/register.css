@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    background-image: url("../images/cineBk.jpg"); /* Reemplaza con la ruta correcta */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen */
+    color: white; /* Para asegurar que el texto sea legible sobre el fondo negro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(27, 27, 27);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 45%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.form-group input[type="date"] {
+    padding: 5px 10px;
+}
+
+.form-group input[type="email"], .form-group input[type="password"] {
+    background-color: #ffffff;
+}
+
+.form-group input[type="password"] + .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 10px);
+    cursor: pointer;
+    color: #aaa;
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.form-group .toggle-password:hover {
+    color: white;
+}
+
+.form-group.full-width {
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkred;
+}

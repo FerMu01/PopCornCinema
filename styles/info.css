@@ -46,14 +46,17 @@ h3 {
 }
 
 .format-button.active, .time-button.active {
-    background-color: red;
+  
+    background: linear-gradient(to right, #000000, #ad0c0c);
+
     color: white;
 }
 
 .navbar {
     position: fixed;
     top: 0;
-    background-color: #b50606;
+    background: linear-gradient(to right, #000000, #ad0c0c);
+
     width: 100%;
     height: 70px;
     z-index: 1000;
@@ -104,8 +107,8 @@ a:hover {
 }
 
 .navbar img {
-    width: 50px;
-    height: 50px;
+    width: 160px;
+    height: 90px;
     margin-right: 15px;
 }
 
@@ -170,7 +173,8 @@ a:hover {
 }
 
 footer {
-    background-color: #a40606;
+    background: linear-gradient(to right, #000000, #ad0c0c);
+
     color: #ffffff;
     text-align: center;
     padding: 10px;

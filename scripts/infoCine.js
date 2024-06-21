@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
         trailer: 'https://www.youtube.com/embed/DDWWwEiWHJw?si=K3AdiEHyXEyHo61p'
 
       }
+      inmensa: {
+        title: 'EL REINO DEL PLANETA DE LOS SIMIOS',
+        genre: 'CIENCIA FICCION',
+        duration: '90 min.',
+        description: 'Los Juegos del Hambre: Una historia épica de supervivencia y revolución.',
+        image: 'images/simio.jpg',
+        trailer: 'https://www.youtube.com/embed/DDWWwEiWHJw?si=K3AdiEHyXEyHo61p'
+
+      }
       // Add more movies as needed
     };
 
