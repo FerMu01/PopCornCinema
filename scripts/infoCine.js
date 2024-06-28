@@ -44,14 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
         image: 'images/simio.jpg',
         trailer: 'https://www.youtube.com/embed/DDWWwEiWHJw?si=K3AdiEHyXEyHo61p'
 
-      }
+      },
       inmensa: {
-        title: 'EL REINO DEL PLANETA DE LOS SIMIOS',
-        genre: 'CIENCIA FICCION',
-        duration: '90 min.',
-        description: 'Los Juegos del Hambre: Una historia épica de supervivencia y revolución.',
-        image: 'images/simio.jpg',
-        trailer: 'https://www.youtube.com/embed/DDWWwEiWHJw?si=K3AdiEHyXEyHo61p'
+        title: 'INTENSAMENTE 2',
+        genre: 'ANIMADA',
+        duration: '125 min.',
+        description: 'Inside Out 2 es una película animada estadounidense producida por Pixar Animation Studios para Walt Disney Pictures. La secuela de Inside Out, fue dirigida por Kelsey Mann, producida por Mark Nielsen y escrita por Meg LeFauve.',
+        image: 'images/intensa2.jpg',
+        trailer: 'https://www.youtube.com/embed/9bol4Yyx9Gs?si=gi3xWQHXI-iMd3H'
 
       }
       // Add more movies as needed
